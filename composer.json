@@ -1,0 +1,45 @@
+{
+  "name": "imm/imm-ds",
+  "description": "Projeto para downloader de mídias sociais",
+  "keywords": [
+    "instagram",
+    "scraper",
+    "downloadersocial"
+  ],
+  "type": "library",
+  "homepage": "https://github.com/ilanbrazileiro/imm-ds",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ilan",
+      "email": "ilanbrazileiro@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "mashape/unirest-php": "3.0.*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "psr/simple-cache": "~1.0",
+    "phpmailer/phpmailer": "~6.1",
+    "slim/slim":"2.0",
+    "athlon1600/youtube-downloader": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.7.*",
+    "phpfastcache/phpfastcache": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "InstagramScraper\\": "src/InstagramScraper/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "InstagramScraper\\Tests\\": "tests/"
+    }
+  },
+  "support": {
+    "email": "r.kapishev@gmail.com"
+  }
+}
